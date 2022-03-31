@@ -15,7 +15,7 @@ class User {
         name: json["name"] as String,
         surname: json["surname"] as String,
         phone: json["phone"] as String,
-        description: json["description"] as String);
+        description: json["description"] ?? "No description");
   }
   @override
   String toString() {
